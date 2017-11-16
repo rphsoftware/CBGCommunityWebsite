@@ -1,0 +1,220 @@
+<body><div id="hero-main"></div>
+<section class="hero is-fullheight is-primary" id="mainhero">
+  <div class="hero-head slideInDown animated">
+    <div class="container">
+      <div class="tabs">
+        <ul>
+          <li><a><img src="https://botstion.tech/img/botstion2trans.png" id="botstion-top-logo">Botstion2</a></li> <span class="links"><a href="http://github.com/thelmgn/botstion">Help out!</a><a onclick="addpopup(&quot;https://thelmgn.com/discord&quot;,&quot;supportbutton&quot;)" id="supportbutton">Support Server</a></span>
+               
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-body zoomIn animated">
+    <div class="container has-text-centered">
+      <h3 class="title is-2">
+        <img src="https://botstion.tech/img/botstion2trans.png" id="botstion-main-logo">
+        <strong>Botstion</strong><sup>2</sup>
+      </h3><h4 class="subtitle is-4">A <strong>multipurpose</strong>, <strong><a href="https://github.com/thelmgn/botstion">open-source</a><sup><a href="https://github.com/theLMGN/botstion/blob/master/LICENSE">GPLv3</a></sup></strong> Discord bot made by <strong><a href="https://thelmgn.com">theLMGN</a></strong> 
+        <br>
+      <a class="button is-link is-large" onclick="addpopup(&quot;https://discordapp.com/oauth2/authorize?client_id=321746347550310411&amp;scope=bot&amp;permissions=268561473&quot;,&quot;addbutton&quot;)" id="addbutton">Sign me up!</a><br><span class="tag is-warning">Botstion is currently in beta, expect a lack of commands, bugs, and downtime. Want to help? Click 'help out' at the top.</span></h4>
+    </div>
+  </div>
+
+  
+</section>
+<section class="hero is-fullheight is-info" id="hero2">
+  <div class="hero-head slideInDown animated">
+    <div class="container">
+      <div class="tabs is-centered">
+        <ul>
+          <li>
+            Some statistics
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-body zoomIn animated">
+    <div class="container has-text-centered">
+      <div class="card">
+        <div class="card-content">
+          <p class="title" id="guilds"><span class="awaiting-data">load</span></p>
+          <p class="subtitle">Servers</p>
+        </div>
+      </div>  
+      <div class="card">
+        <div class="card-content">
+          <p class="title" id="unique-members"><span class="awaiting-data">loading</span>
+            <!-- Really wierdly placed script here. -->
+            <script>
+  
+  if (location.protocol == 'https:')
+{ 
+  if (location.hostname == "s.codepen.io") {
+    document.getElementById("guilds").innerHTML = "This doesn't work"
+    document.getElementById("unique-members").innerHTML = "in CodePen."
+  } else {
+ location.href = 'http:' + window.location.href.substring(window.location.protocol.length);
+}}</script>
+          </p>
+          <p class="subtitle">Unique Members</p>
+        </div>
+      </div>  
+      <div class="card">
+        <div class="card-content">
+          <p class="title" id="commits">20</p>
+          <p class="subtitle">Commits</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+<div class="hero-foot slideInUp animated">
+    <div class="container">
+      <div class="is-centered">
+        <ul>
+          <li><a href="https://bulma.io"><img src="https://img.shields.io/badge/made%20with-bulma-00d1b2.svg?style=flat-square" class="shield"></a><a href="https://github.com/theLMGN/botstion/blob/master/LICENSE"><img src="  https://img.shields.io/github/license/thelmgn/botstion.svg?style=flat-square" class="shield"></a><a href="https://thelmgn.com/discord"><img src="  https://img.shields.io/discord/320950192444669954.svg?style=flat-square" class="shield"></a><a href="https://codepen.io/theLMGN/pen/RjbOmK"><img src="https://img.shields.io/badge/codepen-RjbOmK-000000.svg?style=flat-square" class="shield"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+ 
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css");
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+   #filler {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+  }
+  body * {
+    transition: all 0.5s;
+}
+  
+  /* This is what I like to call the: Bulma is stupid so I have to make my own hacks to fix some stuff broken by Bulma, or BISIHTMMOHTFSSBBB */
+  .card {
+    display: inline;
+  }
+  .is-centered {
+    text-align: center;
+  }
+  .links > a {
+    display: inline;
+  }
+  .message {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .message-content {
+    height: 100%;
+    position:fixed;
+  }
+  .message.is-warning  {
+    background-color: #ffdd57;
+  }
+.button.is-link {
+    background-color: #3273dc;
+    border-color: transparent;
+    color: #fff;
+ text-decoration:none;
+  margin-top: 1em;
+}
+  .is-loading {
+    color: transparent!important;
+    pointer-events: none;
+}
+  .is-loading:after {
+    -webkit-animation: spinAround .5s infinite linear;
+    animation: spinAround .5s infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: relative;
+    width: 1em;
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    position: absolute!important;
+}
+/* alright, actual botstion css below below */
+  .links {
+    text-align: right;
+    right: 0;
+    position: absolute;
+  }
+
+  #botstion-main-logo {
+    width: 4em;
+    height: 4em;
+    display:block;
+    margin-left: calc(50% - 2em);
+  }
+  #botstion-top-logo {
+    width: 3em;
+    height: 3em;
+  }
+  .awaiting-data {
+    background-color: #fff;
+    color: #fff;
+    
+  }
+  
+#hero-main {
+ background-image: url("https://source.unsplash.com/pm1CMUgTD9I/2736x2736");
+  position: fixed;
+  height: 125%;
+  width: 125%;
+  left: -12.5%;
+  top: -12.5%;
+  background-size: cover;
+  background-position: center; 
+  filter: brightness(50%) blur(0.75em)
+}
+body {
+  margin: 0;
+}
+
+#mainhero {
+  background: rgba(0,0,0,0);
+}
+  .hero {
+    width: 100%;
+  }
+  #hero2 {
+    position: absolute;
+    top: 100%;
+    min-height: 50%;
+  }
+.badge {
+  height: 2em;
+  border: none;
+}
+.shield {
+  padding-bottom: 0.4em;
+  padding-right: 0.25em;
+}
+a,img {
+  border-bottom-color: rgba(0,0,0,0);
+  border-top-color: rgba(0,0,0,0);
+}
+body > section > div.hero-foot > div > div > ul > li {
+  text-align: center;
+}
+</style>
