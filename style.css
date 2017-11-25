@@ -1,0 +1,182 @@
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css");
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+   #filler {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+  }
+  body * {
+    transition: all 0.5s;
+}
+  
+  /* This is what I like to call the: Bulma is stupid so I have to make my own hacks to fix some stuff broken by Bulma, or BISIHTMMOHTFSSBBB */
+  .card {
+    display: inline;
+  }
+  .is-centered {
+    text-align: center;
+  }
+  .links > a {
+    display: inline;
+  }
+  .message {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .message-content {
+    height: 100%;
+    position:fixed;
+  }
+  .message.is-warning  {
+    background-color: #ffdd57;
+  }
+.button.is-link {
+    background-color: #3273dc;
+    border-color: transparent;
+    color: #fff;
+ text-decoration:none;
+  margin-top: 1em;
+}
+  .is-loading {
+    color: transparent!important;
+    pointer-events: none;
+}
+  .is-loading:after {
+    -webkit-animation: spinAround .5s infinite linear;
+    animation: spinAround .5s infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: relative;
+    width: 1em;
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    position: absolute!important;
+}
+/* alright, actual cbg css below below */
+
+  .links {
+    text-align: right;
+    right: 0;
+    position: absolute;
+  }
+
+  #cbg-main-logo {
+    width: 4em;
+    height: 4em;
+    display:block;
+    margin-left: calc(50% - 2em);
+  }
+  #cbg-top-logo {
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+  }
+  .awaiting-data {
+    background-color: #fff;
+    color: #fff;
+    
+  }
+  
+#hero-main {
+ background-image: url("https://source.unsplash.com/3KWiUZPojXk");
+  position: fixed;
+  height: 125%;
+  width: 125%;
+  left: -12.5%;
+  top: -12.5%;
+  background-size: cover;
+  background-position: center; 
+  filter: brightness(50%) blur(0.75em)
+}
+body {
+  margin: 0;
+}
+
+#mainhero {
+  background: rgba(0,0,0,0);
+}
+  .hero {
+    width: 100%;
+  }
+  #hero2 {
+    position: absolute;
+    top: 100%;
+    min-height: 50%;
+  }
+.badge {
+  height: 2em;
+  border: none;
+}
+.shield {
+  padding-bottom: 0.4em;
+  padding-right: 0.25em;
+}
+a,img {
+  border-bottom-color: rgba(0,0,0,0);
+  border-top-color: rgba(0,0,0,0);
+}
+body > section > div.hero-foot > div > div > ul > li {
+  text-align: center;
+}
+.tag:not(body).is-owner {
+    background-color: rgb(241, 196, 15);
+    color: rgba(0, 0, 0, 0.7);
+}
+.tag:not(body).is-coowner {
+    background-color: rgb(218, 129, 33);
+    color: rgba(0, 0, 0, 0.7);
+}
+.tag:not(body).is-admin {
+    background-color: rgb(233, 30, 99);
+    color: rgba(0, 0, 0, 0.7);
+}
+.tag:not(body).is-dev {
+    background-color: rgb(17, 128, 106);
+    color: #fff;
+}
+.tag:not(body).is-staff {
+    background-color: rgb(46, 204, 113);
+    color: #fff;
+}
+.link {
+  color: #3273dc !important;
+}
+/* stolen from dnomaid */
+.owner {
+    border: 5px solid rgb(241, 196, 15);
+}
+.coowner {
+    border: 5px solid rgb(218, 129, 33);
+}
+
+.admin {
+    border: 5px solid rgb(233, 30, 99);
+}
+.dev {
+    border: 5px solid rgb(17, 128, 106);
+}
+.staff {
+    border: 5px solid rgb(46, 204, 113);
+}
+.someone {
+    transition: transform .25s ease;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    max-width: 90%;
+}
