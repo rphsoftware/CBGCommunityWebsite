@@ -101,7 +101,7 @@ body {
   top: -12.5%;
   background-size: cover;
   background-position: center; 
-  filter: brightness(50%) blur(0.75em)
+  /*filter: brightness(50%) blur(0.75em)*/ /* Fixing extreme lag */
 }
 body {
   margin: 0;
